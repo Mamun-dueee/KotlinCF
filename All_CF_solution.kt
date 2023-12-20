@@ -25,3 +25,15 @@ fun main() {
 
     println(capitalizedWord)
 }
+
+
+//236A Boy or Girl [set concept] [unique letters in a given word]
+
+fun main() {
+    val word = readLine()!!
+    val uniqueLettersCount = word.toSet().size
+    if(uniqueLettersCount % 2 == 0)
+    	println("CHAT WITH HER!")
+    else 
+    	println("IGNORE HIM!")
+}
