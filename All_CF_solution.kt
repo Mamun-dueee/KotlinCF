@@ -13,3 +13,15 @@ fun main() {
     println(result)
     
 }
+
+
+//281A_Word_Capitalization
+
+fun main() {
+    val word = readLine()!!
+
+    // Capitalize the first letter
+    val capitalizedWord = word.capitalize()
+
+    println(capitalizedWord)
+}
