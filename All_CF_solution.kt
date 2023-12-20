@@ -37,3 +37,20 @@ fun main() {
     else 
     	println("IGNORE HIM!")
 }
+
+
+//266A Stone on the table 
+
+fun main() {
+    val n = readLine()
+    val str = readLine()!!
+    val strList = str.toList()
+    var result = 0
+
+    for(i in 0..strList.size-2){
+        if(strList[i]==strList[i+1])
+            result ++
+    }
+    println(result)
+
+}
