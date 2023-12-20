@@ -54,3 +54,24 @@ fun main() {
     println(result)
 
 }
+
+
+//791A Bear and big Brother [implementation ] 
+
+fun main() {
+    val line = readln().split(" ").toList()
+    var a = line[0].toInt()
+    var b = line[1].toInt()
+
+    var years = 0
+    while(true){
+        if(a>b)
+            break
+        else
+            years++
+        a = a*3
+        b = b*2
+    }
+    println(years)
+
+}
