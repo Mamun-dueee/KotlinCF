@@ -75,3 +75,26 @@ fun main() {
     println(years)
 
 }
+
+
+//617A - Elephant [math]
+
+fun main() {
+    val x = readln().toInt()
+    var result = 0
+    var mod = 0
+
+    result += x / 5
+    mod = x % 5
+    result += mod / 4
+    mod = mod % 4
+    result += mod / 3
+    mod = mod % 3
+    result += mod / 2
+    mod = mod % 2
+    result += mod / 1
+    mod = mod % 1
+
+    println(result)
+
+}
