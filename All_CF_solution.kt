@@ -188,3 +188,28 @@ fun main() {
     }
     println(highCapacity)
 }
+
+
+//677A. Vanya and Fence [implementation]
+
+fun main() {
+    val input = readln().split(" ").toList()
+    val n = input[0].toInt()
+    val h = input[1].toInt()
+
+    //println(n)
+
+    val inputHeight = readln().split(" ").toList()
+    val a = inputHeight.mapNotNull { it.toInt() }
+    //println(a)
+
+    var width = 0
+
+    for (i in 0..n-1){
+        if(a[i] > h)
+            width += 2
+        else
+            width ++
+    }
+    println(width)
+}
