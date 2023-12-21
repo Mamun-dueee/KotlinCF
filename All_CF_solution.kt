@@ -136,3 +136,21 @@ fun main() {
     else
     	println("NO")
 }
+
+
+//734A. Anton and Danik [implementation, strings]
+
+fun main() {
+    val input = readln()
+    val inputLine = readln()
+    
+    var antonWon = inputLine.count{it=='A'}
+	var danikWon = inputLine.count{ it == 'D'}    
+    
+    if(antonWon > danikWon)
+    	println("Anton")
+    else if(antonWon < danikWon)
+    	println("Danik")
+    else
+    	println("Friendship")
+}
