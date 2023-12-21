@@ -154,3 +154,14 @@ fun main() {
     else
     	println("Friendship")
 }
+
+//41A. Translation [implementation, strings]
+
+fun main() {
+    val berland = readln()
+    val birland = readln()
+    if(berland == birland.reversed())
+    	println("YES")
+    else
+    	println("NO")
+}
