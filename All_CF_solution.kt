@@ -165,3 +165,26 @@ fun main() {
     else
     	println("NO")
 }
+
+//116A. Tram [ implementation ] 
+
+fun main() {
+    val n = readln().toInt()
+    var capacity = 0
+    var highCapacity = 0
+
+    for (i in 1..n){
+        val input = readln().split(" ")
+        val inputList = input.toList()
+        val a = inputList[0].toInt()
+        val b = inputList[1].toInt()
+
+        capacity = capacity -a+b
+        if(capacity > highCapacity)
+            highCapacity = capacity
+
+
+
+    }
+    println(highCapacity)
+}
