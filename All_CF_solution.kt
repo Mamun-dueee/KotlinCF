@@ -121,3 +121,18 @@ fun main() {
         println(0)
     
 }
+
+
+//110A. Nearly Lucky Number [implementation]
+
+fun main() {
+    val inputLine = readln()
+    
+    var luckyDigitCount = inputLine.count{it=='4'}
+    luckyDigitCount += inputLine.count{ it == '7'}
+    
+    if(luckyDigitCount == 4 || luckyDigitCount == 7)
+    	println("YES")
+    else
+    	println("NO")
+}
