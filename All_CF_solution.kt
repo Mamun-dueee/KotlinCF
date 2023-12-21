@@ -98,3 +98,26 @@ fun main() {
     println(result)
 
 }
+
+
+//546A Soldier and bananas [ brute force, math ]
+
+fun main() {
+    val str = readln() 
+    val nums = str.split(" ").toList()
+    
+    var k = nums[0].toInt()
+    var n = nums[1].toInt()
+    var w = nums[2].toInt()
+    var dollars = 0
+    
+    for ( i in 1..w){
+        dollars += k*i
+        
+    }
+    if( dollars > n)
+        println(dollars-n)
+    else 
+        println(0)
+    
+}
