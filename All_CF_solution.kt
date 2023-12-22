@@ -213,3 +213,37 @@ fun main() {
     }
     println(width)
 }
+
+//271A. Beautiful Year
+
+fun main() {
+    val y = readln()
+    var yInt = y.toInt()
+    
+    while(true){
+        yInt ++
+        val dy = yInt.toString().toSet()
+    	
+        if(dy.size == y.length){
+            
+            println(dy.joinToString(""))
+            break
+        }
+    }
+    
+}
+
+//266B. Queue at the School
+
+fun main(){
+    val input = readln().split(" ").toList()
+    val n = input[0].toInt()
+    val t = input[1].toInt()
+
+    val s = readln()
+    var a = s
+    for (i in 1..t){
+        a = a.replace("BG", "GB")
+    }
+    println(a)
+}
