@@ -258,3 +258,22 @@ fun main() {
     else
     	println("EASY")
 }
+
+//467A - George and Accommodation
+
+fun main(){
+    val n = readln().toInt()
+    var result = 0
+
+    for(i in 1..n){
+        val s = readln().split(" ").toList()
+        val p = s[0].toInt()
+        val q = s[1].toInt()
+
+        val x = q-p
+        if(x >= 2){
+            result ++
+        }
+    }
+    println(result)
+}
