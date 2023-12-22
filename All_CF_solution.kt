@@ -247,3 +247,14 @@ fun main(){
     }
     println(a)
 }
+
+//1030A - In Search of an Easy Problem
+
+fun main() {
+    val n = readln()
+    val s = readln()
+    if(s.contains('1'))
+    	println("HARD")
+    else
+    	println("EASY")
+}
