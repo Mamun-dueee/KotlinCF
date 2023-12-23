@@ -277,3 +277,22 @@ fun main(){
     }
     println(result)
 }
+
+//344A. Magnets
+
+fun main(){
+    val n = readln().toInt()
+    var s = readln().toList()
+    var prePole = s[1]
+    var group = 1
+
+    for (i in 1..n-1){
+        var ss = readln().toList()
+
+        if(prePole == ss[0])
+            group ++
+        prePole = ss[1]
+
+    }
+    println(group)
+}
