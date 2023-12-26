@@ -296,3 +296,44 @@ fun main(){
     }
     println(group)
 }
+
+
+//144A. Arrial of the General 
+
+// comment..........................................,............................
+// 
+// /*
+fun main() {
+    val n = readln().toInt()
+    val line = readln().split(" ").map{ it.toInt() }
+    var result = 0
+    
+    val min_height = line.minOrNull()
+    val max_height = line.maxOrNull()
+    
+    val min_last_index = line.lastIndexOf(min_height)
+    val max_first_index = line.indexOf(max_height)
+    
+    if(max_first_index < min_last_index){
+        result = max_first_index + n - 1 - min_last_index
+        
+    } else {
+        result = max_first_index + n - 1 - min_last_index -1
+    }
+    
+    println(result)
+    
+    /*
+    val numbers = listOf(5, 2, 10,1, 8, 1, 7, 3, 10)
+
+    val minValue = numbers.minOrNull()
+    val maxValue = numbers.maxOrNull()
+
+    val minIndex = numbers.lastIndexOf(minValue)
+    val maxIndex = numbers.indexOf(maxValue)
+
+    println(numbers.size)
+    println("Minimum value: $minValue at index $minIndex")
+    println("Maximum value: $maxValue at index $maxIndex")
+    */
+}
