@@ -358,3 +358,24 @@ fun main() {
         println("NO")
     }
 }
+
+// 148A. Insomnia cure
+
+
+fun main(){
+    val k = readln().toInt()
+    val l = readln().toInt()
+    val m = readln().toInt()
+    val n = readln().toInt()
+    
+    val d = readln().toInt()
+    
+    var dragons = 0
+    
+    for(i in 1..d){
+        if( i%k == 0 || i%l == 0 || i%m == 0 || i%n == 0)
+            dragons ++
+    }
+    println(dragons)
+    
+}
