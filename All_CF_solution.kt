@@ -337,3 +337,24 @@ fun main() {
     println("Maximum value: $maxValue at index $maxIndex")
     */
 }
+
+
+//520A. Pangram
+
+fun main() {
+    val alphabet = ('a'..'z').toSet()
+    //println(alphabet.size) 
+   
+    val n = readln()
+    val input = readln().toLowerCase()
+  
+    val characters = input.toCharArray().toSet()
+    //println(characters.size)
+    //println(characters)
+    
+    if ( alphabet.size == characters.size ){
+        println("YES")
+    } else {
+        println("NO")
+    }
+}
