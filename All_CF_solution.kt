@@ -379,3 +379,20 @@ fun main(){
     println(dragons)
     
 }
+
+
+//443A. Anton and Letters
+
+fun main(){
+    val str = readln()
+    //println(str.substring(1, str.length-1))
+    val strFil = str.substring(1, str.length-1)
+    //println(strFil.length)
+    val strLetters = strFil.split(", ").toSet()
+    //println(strLetters)
+    //println(strLetters is Set)
+    if (strFil.length == 0)
+        println(strFil.length)
+    else
+        println(strLetters.size)
+}
