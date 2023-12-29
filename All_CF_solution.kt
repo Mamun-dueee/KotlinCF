@@ -396,3 +396,32 @@ fun main(){
     else
         println(strLetters.size)
 }
+
+
+// 996A. Hit the Lottery 
+
+fun main(){
+    val n = readln().toInt()
+    
+    var total_notes = 0
+    var mod = 0
+    
+    total_notes = n/100
+    mod = n % 100
+    
+    if ( mod >= 20){
+        total_notes += mod / 20
+        mod = mod % 20
+    } 
+    if ( mod >= 10){
+        total_notes += mod / 10
+        mod = mod % 10
+    } 
+    if ( mod >= 5){
+        total_notes += mod / 5
+        mod = mod % 5
+    }
+    if ( mod >= 1) 
+        total_notes += mod
+    println(total_notes)
+}
